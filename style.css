@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+}
+body{
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: var(--Grey-900);
+  
+
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--White);}
+.attribution a { color: var(--Green); }
+.containar{
+    width: 450px;
+    background-color: var(--Grey-800);
+    margin: auto;
+    height: 700px;
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  
+}
+h1 , h4, li{
+    color: var(--White);
+}
+
+ 
+img{
+    margin-left: 175px;
+    width: 100px;
+    border-radius: 50%;
+   margin-top: 50px;
+}
+.title{
+    text-align: center;
+    padding-top: 40px;
+    
+}
+.title h1{
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+}
+.title h3{
+    color: var(--Green);
+    padding-bottom: 25px;
+}
+.title h4{
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+     padding-bottom: 35px;
+}
+.list ul{
+   
+    display: grid;
+    gap: 15px;
+}
+.list a{
+    text-decoration: none;
+}
+.list li{
+    font-weight: 600;
+    margin: auto;
+    border-radius: 10px;
+    list-style-type: none;
+    align-content: center;
+    text-align: center; 
+    width: 350px;
+    height: 50px;
+    background-color: var(--Grey-700);
+
+}
+.attribution a:hover,
+.attribution a:focus{
+    color: red;
+}
+.list ul a:hover{
+    li{
+        background-color: var(--Green);
+        color: var(--Grey-800);
+    }
+}
+@media (max-width: 375px){
+    .containar{
+        width: 375px;
+        background-color: var(--Grey-800);
+        height: 700px;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+
+    }
+    body{
+        background-color: var(--Grey-900);
+    }
+   img{
+    margin-left: 140px;
+   }
+}
